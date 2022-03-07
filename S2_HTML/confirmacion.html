@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #856F9D;
+        }
+
+        h1 {
+            color:white;
+        }
+        
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(106, 90, 141);
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        
+        }
+
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: center;
+            width: 70%;
+            height: fit-content;
+            /* only for demonstration, should be removed */
+            background: rgba(255, 255, 255, 0.349);
+            padding: 5px;
+            color: white;
+            font-size: large;
+        }
+
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center> 
+        <h1 style="padding-top: 250px; ">¡GRACIAS POR TU PREFERENCIA!</h1>
+        <h1 style="color: #49263e;">En breve nos comunicaremos contigo</h1>
+        <br><br><br>
+        <a href="index.html" style="color: rgba(240, 248, 255, 0.466);">Volver a la página de inicio</a>        
+    </center>
+
+
+
+</body>
+
+</html>

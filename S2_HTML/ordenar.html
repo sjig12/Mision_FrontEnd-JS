@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #856F9D;
+        }
+
+        h1 {
+            color:white;
+        }
+        
+        h2{
+            color:rgb(89, 50, 90);
+            padding: 0%;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(106, 90, 141);
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        
+        }
+
+        h3 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: center;
+            width: 70%;
+            height: fit-content;
+            /* only for demonstration, should be removed */
+            background: rgba(255, 255, 255, 0.349);
+            padding: 5px;
+            color: white;
+            font-size: large;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        label {
+            color: #663b83;
+            font-weight: bold;
+            
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <nav style="height: fit-content;"> 
+            <img src="logo.jpg" width="20%">
+            <h1>¡Gracias por preferir <b><i>ELSA BOR</i></b> <i>Pastelería</i>!</h1>                    
+        </nav>
+        <br>
+
+        <nav style="padding-bottom: 40px;">
+            <p style="color: #000000; font-size:22px;"><b>Para continuar con tu orden por favor llena los siguientes campos:</b></p>    
+            <label>Nombre <input type="text"></label> &nbsp;
+            <label>Num. de Teléfono: <input type="text"></label> &nbsp;
+            <label>E-mail: <input type="email"></label> &nbsp;
+
+            <br><br>
+            <p style="color: #000000; font-size:19px;"><b>Escoge el sabor de pan de tu preferencia (máximo 3)</b></p>
+            <label> Chocolate <input type="checkbox"> </label> &nbsp;
+            <label> Fresa <input type="checkbox"> </label> &nbsp;
+            <label> Vainilla <input type="checkbox"> </label> &nbsp;
+            <label> Plátano <input type="checkbox"> </label> &nbsp;
+            <label> Zanahoria <input type="checkbox"> </label> &nbsp;
+            <label> Red Velvet (+ $10)<input type="checkbox"> </label> &nbsp;
+            <label> Frutos Rojos <input type="checkbox"> </label> &nbsp;
+
+            <br><br>
+            <p style="color: #21192a; font-size:19px;"><b>Escoge el sabor de relleno</b></p>
+            <label> Nutella (+ $30)<input type="checkbox"> </label> &nbsp;
+            <label> Mermelada de Fresa <input type="checkbox"> </label> &nbsp;
+            <label> Babaria <input type="checkbox"> </label> &nbsp;
+            <label> Frutas Mixtas <input type="checkbox"> </label> &nbsp;
+            <label> Crema Chantilli <input type="checkbox"> </label> &nbsp;
+            <br>
+            <label> Crema base Philadelphia <input type="checkbox"> </label> &nbsp;
+            <label> Cajeta <input type="checkbox"> </label> &nbsp;
+
+            <br><br>
+            <p style="color: #21192a; font-size:19px;"><b> - Escoge el tipo de decoración - </b></p>
+            <label> Grageas de colores <input type="checkbox"> </label> &nbsp;
+            <label> Fresas <input type="checkbox"> </label> &nbsp;
+            <label> Flores<input type="checkbox"> </label> &nbsp;
+            <label> Frutas Mixtas <input type="checkbox"> </label> &nbsp;
+            <br>
+            <label> Diseños personalizados con betún <input type="checkbox"> </label> &nbsp;
+            <label> Figuras de Fondant <input type="checkbox"> </label> &nbsp;
+            <label> Fotografías <input type="checkbox"> </label> &nbsp;
+            <br>
+            <label> Otro... (Especifique) <input type="text"> </label> &nbsp;
+
+            <br><br>
+            <p style="color: #21192a; font-size:19px;"><b> - Escoge el tipo de Cobertura - </b></p>
+            <label> Betún (clásico) <input type="checkbox"> </label> &nbsp;
+            <label> Fondant <input type="checkbox"> </label> &nbsp;
+            <label> Buttercream <input type="checkbox"> </label> &nbsp;
+            <label> Crema base de Philadelphia <input type="checkbox"> </label> &nbsp;
+
+            <br><br>
+            <p style="color: #21192a; font-size:19px;"><b> - Por último escoge el tamaño de Pastel que deseas - </b></p>
+            <label> Individual --- $60 <input type="checkbox"> </label> &nbsp; <br>
+            <label> Chico --- $120 <input type="checkbox"> </label> &nbsp; <br>
+            <label> Mediano --- $200 <input type="checkbox"> </label> &nbsp; <br>
+            <label> Grande --- $275 <input type="checkbox"> </label> &nbsp; <br>
+            <label> Extra Grande o Familiar --- $450 <input type="checkbox"> </label> &nbsp;
+
+            <br><br><br>
+            <a href="confirmacion.html">
+                <button style="width: 300px; height: 100px; font-size: larger; background-color: #8f6fc2; color: beige;">
+                    ENVIAR ORDEN
+                </button>              
+            </a>
+        </nav>
+
+    </center>
+</body>
+
+</html>

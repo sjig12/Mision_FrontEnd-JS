@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsa Bor Pastelería</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: rgb(251, 227, 189);
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(106, 90, 141);
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        
+        }
+
+        h3 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 25%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(143, 88, 137);
+            padding: 10px;
+            color: white;
+            font-size: large;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /*article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }*/
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer 
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }*/
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <center><img src="logo.jpg" width="200px"> </center>
+    
+    <header>
+        <h2>¡Bienvenido!</h2>
+        <h4><i>¿No sabes cómo pedir tu pastel? Aquí te ayudamos</i></h4>
+    </header>
+
+    <section>
+        <nav>
+            <center>
+                <h3><i>Sabores de Pan: </i></h3>
+            
+
+            <ul>
+                <b>
+                <li>- Chocolate</li>
+                <li>- Fresa</li>
+                <li>- Plátano</li>
+                <li>- Zanahoria</li>
+                <li>- Red Velvet</li>
+                <li>- Vainilla</li>
+                <li>- Frutos Rojos</li>
+                </b>
+            </ul></center>
+
+        </nav>
+
+        <nav style="background-color: rgb(175, 98, 162);">
+            <center>
+                <h3><i>Sabores de Relleno: </i></h3>
+
+            <ul>
+                <b>
+                <li>- Nutella</li>
+                <li>- Mermelada de Fresa</li>
+                <li>- Frutas Mixtas</li>
+                <li>- Crema Chantilli</li>
+                <li>- Crema Philadeplhia</li>
+                <li>- Babaria</li>
+                <li>- Cajeta</li>
+                </b>
+            </ul></center>
+        </nav>
+
+        <nav style="background-color: rgb(197, 130, 186);">
+            <center>
+                <h3><i>Tipos de Decoración: </i></h3>
+
+            <ul>
+                <b>
+                <li>- Grageas de colores</li>
+                <li>- Fresas</li>
+                <li>- Frutas Mixtas</li>
+                <li>- Diseños personalizados con betún</li>
+                <li>- Flores</li>
+                <li>- Figuras de Fondant</li>
+                <li>- Fotografías</li>
+                <li>- Otros...</li>
+                </b>
+            </ul></center>
+        </nav>
+
+        <nav style="background-color: #D8A3D1;">
+            <center>
+                <h3><i>Cobertura: </i></h3>
+
+            <ul>
+                <b>
+                <li>- Betún</li>
+                <li>- Fondant</li>
+                <li>- Buttercream </li>
+                <li>- Crema base de Philadelphia</li>
+                </b>
+            </ul></center>
+        </nav>
+
+    </section>
+
+        <header style="background-color: #8f6fc2;"> 
+            <h4>
+                Ahora escoge el tamaño, tenemos las siguientes opciones:
+            </h4>
+        </header>
+
+    <section>
+        <nav style="width: 20%; background-color:#bca1c0; padding: 100px; font-size: larger;" >
+            <center>
+                <img src="pastel.png" width="75%" >
+                <b><i>Individual</i></b>
+
+                <p style="color: #5c3699c2;">(1 persona)</p>
+            </center>          
+        </nav>
+
+        <nav style="width: 20%; background-color:#bca1c0; padding: 80px;font-size: larger" >
+            <center>
+                <img src="pastel.png" width="75%" >
+                <b><i>Chico</i></b>
+                <p style="color: #5c3699c2;">(3 a 5 personas)</p>
+            </center>          
+        </nav>
+
+        <nav style="width: 20%; background-color:#bca1c0; padding: 60px; font-size: larger" >
+            <center>
+                <img src="pastel.png" width="70%" >
+                <b><i>Mediano</i></b>
+                <p style="color: #5c3699c2;">(5 a 7 personas)</p>
+            </center>          
+        </nav>
+
+        <nav style="width: 20%; background-color:#bca1c0; padding: 40px;font-size: larger" >
+            <center>
+                <img src="pastel.png" width="70%" >
+                <b><i>Grande</i></b>
+                <p style="color: #5c3699c2;">(8 a 11 personas)</p>
+            </center>          
+        </nav>
+
+        <nav style="width: 20%; background-color:#bca1c0; padding: 10px;font-size: larger" >
+            <center>
+                <img src="pastel.png" width="70%" >
+                <br>
+                <b><i>Extra grande o Familiar</i></b>
+                <p style="color: #5c3699c2;">(15 a 20 personas)</p>
+            </center>          
+        </nav>
+
+    </section>
+
+    <header style="background-color: #ad7cabd5;"> 
+        <h4>
+            ¿Listo para ordenar?
+        </h4>
+    </header>
+    <br>
+
+    <div style="text-align: center;">
+        <a href="ordenar.html">
+            <button style="width: 300px; height: 100px; font-size: larger; background-color: #8f6fc2; color: beige;">
+                ORDENA AQUÍ
+            </button>              
+        </a>
+      
+    </div>
+    <br>
+    <br>
+    <section>
+        </nav>
+        <nav style="height: 600px; width: 50%; background-color: rgba(255, 255, 255, 0.24); padding: 100px;">
+            <center>
+                <h3 style="color: #403257;"> Horario de atención:</h3>
+                <h3 style="color: rgb(175, 98, 162);"> - Lunes a Viernes -</h3>
+                <p style="color: black;">De 8:00 am a 5:00 pm</p>
+
+                <h3 style="color: rgb(175, 98, 162);"> - Sábados -</h3>
+                <p style="color: black;">De 9:00 am a 5:00 pm</p>
+
+                <h3 style="color: rgb(175, 98, 162);"> - Domingos -</h3>
+                <p style="color: black;">* CERRADO *</p>
+            </center>            
+        </nav>
+
+        <nav style="height: 600px; width: 50%; background-color: transparent">
+            <center>
+                <h3 style="color: #403257;"> Encuéntranos en: </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.3598522217676!2d-110.9731966849219!3d29.124574668391293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce87f400155b39%3A0x92df247193d4067!2sElsa%20Glorias%20Portillo!5e0!3m2!1ses!2smx!4v1646526585065!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                
+            </center>        
+    </section>
+
+    <center>
+        <h3 style="color: #403257;"> Llámanos al <u>6621122345<us></h3>        
+    </center>
+
+</body>
+
+</html>
