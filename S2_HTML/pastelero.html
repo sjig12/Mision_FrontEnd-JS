@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Pastelero</title>
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            text-align: center;
+            color: black;
+        }
+
+        body {
+            background-color: rgb(251, 227, 189);
+        }
+
+        h1 {
+            color: rgb(73, 34, 67);
+        }
+
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(106, 90, 141);
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+
+        }
+
+        nav {
+            float: left;
+            width: 25%;
+            height: fit-content;
+
+            background: transparent;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            font-size: large;
+            padding-bottom: 30px;
+
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            padding-top: 1px;
+            padding-bottom: 1px;
+            width: 100%;
+        }
+
+        .pedidos {
+            padding-block: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Ingredientes disponibles:</h1>
+    </center>
+
+    <section>
+        <nav id="SaboresDePan">
+            <h3 style="color: rgb(163, 112, 157);">SABORES DE PAN:</h3>
+            <table id="Sabores de pan" align="center" style="color:  rgb(110, 80, 106);">
+
+                <tr>
+
+                    <th>HARINA</th>
+                    <th>CANTIDAD</th>
+
+                </tr>
+
+                <tr>
+                    <td>Chocolate</td>
+                    <td>10 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Fresa</td>
+                    <td>3 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Plátano</td>
+                    <td>5 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Zanahoria</td>
+                    <td>5 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Red Velvet</td>
+                    <td>5 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Vainilla</td>
+                    <td>10 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Frutos Rojos</td>
+                    <td>5 kg</td>
+                </tr>
+
+            </table>
+        </nav>
+
+        <nav id="SaboresDeRelleno">
+            <h3 style="color: rgb(163, 112, 157);">SABORES DE RELLENO:</h3>
+            <table id="Sabores de Relleno" align="center" style="color:  rgb(110, 80, 106);"">
+
+                <tr>
+
+                    <th>RELLENO</th>
+                    <th>CANTIDAD</th>
+
+                </tr>
+
+                <tr>
+                    <td>Nutella</td>
+                    <td>10 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Mermelada de Fresa</td>
+                    <td>15 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Frutas Mixtas</td>
+                    <td>5 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Crema Chantilli</td>
+                    <td>10 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Crema Philadelphia</td>
+                    <td>15 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Babaria</td>
+                    <td>10 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Cajeta</td>
+                    <td>5 kg</td>
+                </tr>
+
+            </table>
+        </nav>
+
+        <nav id=" Decoracion">
+                <h3 style="color: rgb(163, 112, 157);">DECORACIÓN:</h3>
+                <table id="Deco" align="center" style="color:  rgb(110, 80, 106);"">
+
+                <tr>
+
+                    <th>INGREDIENTES </th>
+                    <th>CANTIDAD</th>
+
+                </tr>
+
+                <tr>
+                    <td>Frutas Mixtas</td>
+                    <td>2 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Grageas</td>
+                    <td>1.5 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Fresas</td>
+                    <td>5 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Betún</td>
+                    <td>10 kg</td>
+                </tr>
+
+                <tr>
+                    <td>Fondant</td>
+                    <td>3 kg</td>
+                </tr>
+            </table>
+        </nav>
+
+        <nav id=" Cobertura">
+                    <h3 style="color: rgb(163, 112, 157);">COBERTURA:</h3>
+                    <table id="Cober" align="center" style="color:  rgb(110, 80, 106);">
+
+                        <tr>
+
+                            <th>INGREDIENTES</th>
+                            <th>CANTIDAD</th>
+
+                        </tr>
+
+                        <tr>
+                            <td>Betún</td>
+                            <td>10 kg</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fondant</td>
+                            <td>3 kg</td>
+                        </tr>
+
+                        <tr>
+                            <td>Buttercream</td>
+                            <td>3 kg</td>
+                        </tr>
+
+                        <tr>
+                            <td>Crema Philadelphia</td>
+                            <td>3 kg</td>
+                        </tr>
+                    </table>
+
+                        <br>
+
+                    <table align="center">
+                        <tr>
+                            <th> EXTRAS </th>
+                            <th> CANT </th>
+                        </tr>
+
+                        <tr>
+                            <td>Tres leches</td>
+                            <td>10 L</td>
+                        </tr>
+
+                    </table>
+        </nav>
+
+    </section>
+
+    <section>
+        <footer style="background-color: rgba(255, 255, 255, 0.479);">
+            <h2>
+                PEDIDOS
+            </h2>
+        </footer>
+        <br>
+
+        <table align="center" style="text-align: center;">
+            <tr style="background-color: rgba(94, 8, 82, 0.411);">
+                <th class="pedidos" scope="row">NOMBRE</th>
+                <th class="pedidos">CELULAR</th>
+                <th class="pedidos">PAN</th>
+                <th class="pedidos">RELLENO</th>
+                <th class="pedidos">DECORACIÓN</th>
+                <th class="pedidos">COBERTURA</th>
+                <th class="pedidos">TAMAÑO</th>
+                <th class="pedidos">3 LECHES</th>
+                <th class="pedidos">DESCRIPCIÓN EXTRA</th>
+                <th class="pedidos">E-MAIL</th>
+            </tr>
+
+            <tr id="clientes">
+                <th class="pedidos">Salma Iturbe</th>
+                <th class="pedidos">1122334455</th>
+                <th class="pedidos">Vainilla</th>
+                <th class="pedidos">Babaria</th>
+                <th class="pedidos">Fresas</th>
+                <th class="pedidos">Betún</th>
+                <th class="pedidos">Grande</th>
+                <th class="pedidos">Sí</th>
+                <th class="pedidos">...</th>
+                <th class="pedidos">salma@hotmail.com</th>
+            </tr>
+
+            <tr id="clientes">
+                <th class="pedidos">Veronica Grijalva</th>
+                <th class="pedidos">2233445566</th>
+                <th class="pedidos">Fresa</th>
+                <th class="pedidos">Frutas Mixtas</th>
+                <th class="pedidos">Betún</th>
+                <th class="pedidos">Crema Philadelphia</th>
+                <th class="pedidos">Mediano</th>
+                <th class="pedidos">No</th>
+                <th class="pedidos">...</th>
+                <th class="pedidos">vero@gmail.com</th>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+</body>
+
+</html>

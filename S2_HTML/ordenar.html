@@ -72,6 +72,11 @@
             
         }
 
+        p {
+            font-size: 19px;
+            color: #000000;
+        }
+
         /* Responsive layout */
         @media (max-width: 600px) {
 
@@ -93,23 +98,29 @@
         <br>
 
         <nav style="padding-bottom: 40px;">
-            <p style="color: #000000; font-size:22px;"><b>Para continuar con tu orden por favor llena los siguientes campos:</b></p>    
+            <p style= font-size:22px;"><b>PARA CONTINUAR CON TU ORDEN POR FAVOR LLENA LOS SIGUIENTES CAMPOS:</b></p>    
             <label>Nombre <input type="text"></label> &nbsp;
             <label>Num. de Teléfono: <input type="text"></label> &nbsp;
             <label>E-mail: <input type="email"></label> &nbsp;
 
             <br><br>
-            <p style="color: #000000; font-size:19px;"><b>Escoge el sabor de pan de tu preferencia (máximo 3)</b></p>
+            <p><b> - ESCOGE EL SABOR DE PAN DE TU PREFERENCIA (máximo 3) - </b></p>
             <label> Chocolate <input type="checkbox"> </label> &nbsp;
             <label> Fresa <input type="checkbox"> </label> &nbsp;
             <label> Vainilla <input type="checkbox"> </label> &nbsp;
             <label> Plátano <input type="checkbox"> </label> &nbsp;
             <label> Zanahoria <input type="checkbox"> </label> &nbsp;
             <label> Red Velvet (+ $10)<input type="checkbox"> </label> &nbsp;
-            <label> Frutos Rojos <input type="checkbox"> </label> &nbsp;
+            <br>
+            <label> Frutos Rojos (+ $10)<input type="checkbox"> </label> &nbsp;
+
+            <p><b><i>¿Quieres que tu pastel sea de tres leches?</i></b></p>
+            <label> Sí <input type="checkbox"> </label>
+            <br>
+            <label> No <input type="checkbox"> </label> &nbsp;
 
             <br><br>
-            <p style="color: #21192a; font-size:19px;"><b>Escoge el sabor de relleno</b></p>
+            <p><b>- ESCOGE EL SABOR DE RELLENO -</b></p>
             <label> Nutella (+ $30)<input type="checkbox"> </label> &nbsp;
             <label> Mermelada de Fresa <input type="checkbox"> </label> &nbsp;
             <label> Babaria <input type="checkbox"> </label> &nbsp;
@@ -118,9 +129,10 @@
             <br>
             <label> Crema base Philadelphia <input type="checkbox"> </label> &nbsp;
             <label> Cajeta <input type="checkbox"> </label> &nbsp;
+            <label> Sin Relleno <input type="checkbox"> </label> &nbsp;
 
             <br><br>
-            <p style="color: #21192a; font-size:19px;"><b> - Escoge el tipo de decoración - </b></p>
+            <p><b>- ESCOGE EL TIPO DE DECORACIÓN -</b></p>
             <label> Grageas de colores <input type="checkbox"> </label> &nbsp;
             <label> Fresas <input type="checkbox"> </label> &nbsp;
             <label> Flores<input type="checkbox"> </label> &nbsp;
@@ -128,19 +140,23 @@
             <br>
             <label> Diseños personalizados con betún <input type="checkbox"> </label> &nbsp;
             <label> Figuras de Fondant <input type="checkbox"> </label> &nbsp;
-            <label> Fotografías <input type="checkbox"> </label> &nbsp;
+            <label> Fotografías (+ $30)<input type="checkbox"> </label> &nbsp;
             <br>
             <label> Otro... (Especifique) <input type="text"> </label> &nbsp;
 
             <br><br>
-            <p style="color: #21192a; font-size:19px;"><b> - Escoge el tipo de Cobertura - </b></p>
+            <p><b>- ESCOGE EL TIPO DE COBERTURA -</b></p>
             <label> Betún (clásico) <input type="checkbox"> </label> &nbsp;
             <label> Fondant <input type="checkbox"> </label> &nbsp;
             <label> Buttercream <input type="checkbox"> </label> &nbsp;
             <label> Crema base de Philadelphia <input type="checkbox"> </label> &nbsp;
 
             <br><br>
-            <p style="color: #21192a; font-size:19px;"><b> - Por último escoge el tamaño de Pastel que deseas - </b></p>
+            <p><b>- SI QUIERES PERSONALIZAR TU PASTEL, DESCRIBE CÓMO LO QUIERES (opcional)-</b></p>
+            <input type="text" size="60px">
+
+            <br><br>
+            <p><b>- POR ÚLTIMO ESCOGE EL TAMAÑO DE PASTEL QUE DESEAS -</b></p>
             <label> Individual --- $60 <input type="checkbox"> </label> &nbsp; <br>
             <label> Chico --- $120 <input type="checkbox"> </label> &nbsp; <br>
             <label> Mediano --- $200 <input type="checkbox"> </label> &nbsp; <br>
