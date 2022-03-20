@@ -1,0 +1,371 @@
+* {
+    font-family: Avenir;
+}
+
+    @font-face {
+        font-family: Avenir;
+        src: url(Avenir_95_Black.ttf);
+    }
+
+    @font-face {
+        font-family: aceh;
+        src: url(Aceh-Light.ttf);
+    }
+
+    /* layout responsivo*/
+    @media (max-width: 600px) {
+        nav,
+        section {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+body {
+    flex-wrap: wrap;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.tituloParrafo{
+    font-family: Avenir;
+    text-align: left;
+    font-size: 70px;
+    padding-top: 10px;
+    padding-left: 15%;
+    line-height: 100%;
+    color: #1d3e74;
+}
+
+.parrafos {
+    font-family: aceh;
+    font-weight: bolder;
+    color:#6f7884;
+    font-size: 38px;
+    padding-left: 15%;
+    text-align: left;
+}
+
+
+/* ---------------MENU SUPERIOR ------------------*/
+.seccionSuperior {
+
+    width: 100%;
+    height: fit-content;
+    inset: 0%;
+}
+
+nav {
+    width: 50%;
+    height: 1000px;
+    float: left;
+    
+}
+
+#menuSuperior {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    float: left;
+}
+
+ nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+    padding-left: 6%;
+}
+
+ nav ul li {
+    display: inline-block ;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 40px;
+}
+
+#idVaccination {
+    font-size:41px;
+    color: #2F4ACB;
+    padding-right: 20%;
+}
+
+#botonHoax {
+    height: 70px;
+    width: 220px;
+    background-color: #2F4ACB;
+    color: white;
+    font-size: 27px;
+    border-style:none;
+    border-radius: 10px;
+    box-shadow: 0em 0 1em #2f49cba6;
+    font-family: aceh;
+    font-weight: bold;
+}
+
+.cositasMenu {
+    font-family: aceh;
+    color: rgba(0, 0, 0, 0.507);
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+/*----------- SECCION 2 ------------------->*/
+
+#section2 {
+    width: 100%;
+    height: 1000px; 
+    left: 0%;
+}
+
+
+#foto1 {
+    background-image: url(imagenes/repostera.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    
+}
+
+.iconos {
+    list-style-type: none;
+    color: #1d3e74;
+    padding-left: 15%;
+    padding-top: 5%;
+    font-size: 25px;
+}
+
+.fotitos {
+    height: 25px;
+}
+
+#fotosVacunas{
+    width: 100%;
+    height: 150px;
+    padding-top: 10%;
+    background-image: url("imagenes/vacunasimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#div1 {
+    width: 60%;
+}
+
+
+/* --------- Cuadros Raros ---------- */
+#div2 {
+    
+    width: 100%;
+    height: 450px;
+}
+
+div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div ul li {
+    display: inline-block ;
+    background-color: #c1c8d43f;
+    width: 20%;
+    height: 400px;
+    font-family: Avenir;
+    border-radius: 20px;
+    padding-top: 1%;
+}
+
+.fotitos2{
+    margin-right: 60%;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.subtitulos{
+    font-size: 32px;
+    color: #1d3e74;
+    text-align: left;
+    padding-left: 10%;
+    font-family: aceh;
+    font-weight: bolder;
+}
+
+.contenido{
+    font-family: aceh;
+    font-weight: bolder;
+    color:#6f7884;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+/* --------- Info que nlc ---------- */
+#info{
+    display: flex; /* para q la caja sea flexible*/
+    flex-direction: row; /* para q se ponga en fila*/
+    width: 100%;
+    height: 1100px;
+}
+
+#morra2 {
+    width: 50%;
+    padding-top: 7%;
+}
+
+#div1-2_info {
+padding-bottom: 10%;
+}
+
+#div1-2_info > h2 {
+    padding-left: 0%;
+    font-size: 60px;
+    padding-top: 7%;
+}
+
+#div1-2_info > p {
+    padding-left: 0%;
+    font-size: 32px;
+}
+
+#botonesRaros {
+    display: flex;
+    flex-direction: column;
+}
+
+#botonesRaros > li {
+    display: flex;
+    justify-content:space-between;
+    width: 70%;
+    height: 30%;
+    margin-bottom: 20px;
+    align-items: center;
+    font-family: aceh;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: white;
+    
+}
+
+#botonesRaros > li >img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+
+
+
+/* --------- Contactos ---------- */
+
+#contactos {
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#info_contactos {
+    width: 50%;
+}
+
+#cuadros {
+    margin-left: 30%;
+    margin-bottom: 20px; 
+}
+
+#cuadros > li {
+    width: 30%;
+    height: 30%;
+    margin-right: 20px;
+   text-align: center;
+}
+
+#cuadros > li > h2 {
+    font-family: aceh;
+    font-weight: bold;
+    color: #1d3e74;
+    font-size: 30px;
+}
+
+#cuadros > li > p {
+color: #6f7884;
+}
+
+#cuadros > li > img {
+    width: 50px;
+}
+
+#vato {
+    width: 50%;
+}
+
+/* --------- footer ---------- */
+
+footer {
+    background-color: #eff3ff;
+    height: 500px;
+}
+
+#fin {
+    justify-content: space-between;
+    height: fit-content;
+}
+
+#fin > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#div1_ultimo {
+    padding-left: 7%;
+    padding-top: 4%;
+}
+
+
+#div1_ultimo > ul{
+display: flex;
+flex-direction: column;
+
+}
+
+#div1_ultimo > ul >li{
+width: fit-content;
+background-color: transparent;
+}
+
+#div2_ultimo {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60%;
+    padding-top: 4%;
+}
+
+#div2_ultimo > ul{
+    display: flex;
+    flex-direction: column;
+    margin-right:20% ;    
+}
+
+#div2_ultimo > ul >li{
+    height: 20%;
+    width: 100%;
+    background-color: transparent;
+}
+
+#ultimodiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
